@@ -14,8 +14,8 @@ public class Proyectofinal {
         System.out.println("1:Singleton");
         System.out.println("2:Factory");
         System.out.println("3:Strategy");
-        System.out.println("4:Proxy");
-        System.out.println("5:Chain of Responsibility");
+        System.out.println("4:Iterator");
+        System.out.println("5:Decorator");
         
         Scanner scan = new Scanner(System.in);        
         int opt = scan.nextInt();
@@ -49,7 +49,8 @@ public class Proyectofinal {
                 orden.RelizarOrden(500,"muñeca");
                 break;
             case 3: 
-               
+                Strategy st = new Strategy(3,4,2);
+               break;
             case 4: 
                 System.out.println("4");
                 break;
