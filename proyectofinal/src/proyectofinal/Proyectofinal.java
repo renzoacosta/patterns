@@ -13,7 +13,7 @@ public class Proyectofinal {
         System.out.println("-----------------Elige una opciones------------");
         System.out.println("1:Singleton");
         System.out.println("2:Factory");
-        System.out.println("3:Flyweight");
+        System.out.println("3:Strategy");
         System.out.println("4:Proxy");
         System.out.println("5:Chain of Responsibility");
         
@@ -49,8 +49,7 @@ public class Proyectofinal {
                 orden.RelizarOrden(500,"muñeca");
                 break;
             case 3: 
-                System.out.println("3");
-                break;
+               
             case 4: 
                 System.out.println("4");
                 break;
