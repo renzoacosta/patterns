@@ -1,5 +1,6 @@
 package proyectofinal;
 import proyectofinal.fact.*;
+import proyectofinal.iter.*;
 import java.util.*;
 
 public class Proyectofinal {
@@ -51,12 +52,25 @@ public class Proyectofinal {
             case 3: 
                 /*
                 Calculadora basica dependiente de 3 entrada realiza una operacion 
-                entre suma, resta, multiplicacion y division. 
+                entre suma, resta, multiplicacion y division, aplicando una estrategia
+                distinta con las mismas entradas. 
                 */
                 Strategy st = new Strategy(3,4,2);
                break;
             case 4: 
-                System.out.println("4");
+                /*
+                Control de almacenamiento para añadir y consultar un listado de 
+                productos, añadiendo productos por id y por nombre, y consultadolos
+                por el metodo de iteracion.
+                */
+                ArrayList<Productos> prod = new ArrayList<>();
+                prod.add(new Productos("001","Arroz"));
+                prod.add(new Productos("002","Frijol"));
+                prod.add(new Productos("003","Huevo 12 pz"));
+                
+                iterat it = new iterat();
+                
+                System.out.println(it.ProdList(prod));
                 break;
             case 5: 
                 System.out.println("5");
