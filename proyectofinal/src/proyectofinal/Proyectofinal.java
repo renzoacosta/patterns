@@ -49,6 +49,10 @@ public class Proyectofinal {
                 orden.RelizarOrden(500,"muñeca");
                 break;
             case 3: 
+                /*
+                Calculadora basica dependiente de 3 entrada realiza una operacion 
+                entre suma, resta, multiplicacion y division. 
+                */
                 Strategy st = new Strategy(3,4,2);
                break;
             case 4: 
