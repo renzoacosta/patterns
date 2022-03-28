@@ -2,6 +2,7 @@ package proyectofinal;
 import proyectofinal.fact.*;
 import proyectofinal.iter.*;
 import java.util.*;
+import proyectofinal.decor.*;
 
 public class Proyectofinal {
  /*
@@ -73,7 +74,19 @@ public class Proyectofinal {
                 System.out.println(it.ProdList(prod));
                 break;
             case 5: 
-                System.out.println("5");
+                /*
+                Simulacion de la verificacion de un celular, en donde existen 3
+                variantes de sistemas operativos, windows, ios y android, donde
+                dependiendo del sistema operativo puede actuar el dispositivo de
+                una forma u otra
+                */
+                Celular celular = new Celular_estandar("Alcatel");
+                celular = new Android(celular);
+                celular.encender();
+                celular.desbloquear();
+                celular.navegar();
+                celular.apagar();
+                 
                 break;
             default: System.out.println("no se eligio un patron valida"); 
             break;
